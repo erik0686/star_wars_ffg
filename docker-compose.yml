@@ -21,8 +21,6 @@ services:
   test:
     image: internship/star_wars_ffg:development
     command: rspec spec/
-    ports:
-      - 3000:3000
     build:
       context: .
       dockerfile: dev.Dockerfile
